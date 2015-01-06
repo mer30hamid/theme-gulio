@@ -9317,7 +9317,7 @@ hr.large {
   color: #111111;
 }
 .pagination .post-prev {
-  float: right;
+  float: left;
 }
 .pagination .post-next {
   float: right;
