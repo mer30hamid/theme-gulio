@@ -181,7 +181,7 @@
               </div>
               <div class="post-info">
                 <div class="info-left">
-                  <p class="date">تاریخ ارسال {{ post.created_at|format_date }} ، نوشته شده توسط {{ site.author }}</p>
+                  <p class="date">تاریخ ارسال <time datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time> ، نوشته شده توسط {{ site.author }}</p>
                 </div>
                 <div class="info-right">
                   <p class="comments">
@@ -216,7 +216,7 @@
               </div>
               <div class="post-info">
                 <div class="info-left">
-                  <p class="date">تاریخ ارسال {{ link.created_at|format_date }} ، نوشته شده توسط {{ site.author }}</p>
+                  <p class="date">تاریخ ارسال <time datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time> ، نوشته شده توسط {{ site.author }}</p>
                 </div>
                 <div class="info-right">
                   <p class="comments">
@@ -323,7 +323,7 @@
           years: "%d سال"
         };
         $(document).ready(function(){
-            jQuery("time").timeago();
+            jQuery(".date time").timeago();
         });
     </script>
   </body>
