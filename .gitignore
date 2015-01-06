@@ -1,3 +1,16 @@
 node_modules/
 .DS_Store
 assets/.DS_Store
+test.html
+test_files/0207cd9bc087cfb01738.js
+test_files/1aa4352dabf160e2820e.js
+test_files/79bf699e467cf347b50d.js
+test_files/a0b54cca0babce063920.js
+test_files/c03d1a958ee247aa763e.js
+test_files/d1c73e0405e3b06cd3e1.js
+test_files/gulio.min.js
+test_files/jquery.min.js
+test_files/mediaelement-and-player.min.js
+test_files/postachio-pdf.min.js
+test_files/postachio-type-cleanup.js
+test_files/rss.png
