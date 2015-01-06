@@ -14,3 +14,4 @@ test_files/mediaelement-and-player.min.js
 test_files/postachio-pdf.min.js
 test_files/postachio-type-cleanup.js
 test_files/rss.png
+test_files/jquery.timeago.min.js

@@ -14,7 +14,6 @@
     {{ header_meta }}
 
     <link href="{{ assets('css/style.css') }}" rel="stylesheet" />
-
     <script>
     (function(doc, script) {
       var js,fjs=doc.getElementsByTagName(script)[0],frag=doc.createDocumentFragment(),add=function(url,id){if(doc.getElementById(id)){return;}js=doc.createElement(script);js.src=url;id&&(js.id=id);frag.appendChild(js);};
@@ -145,9 +144,9 @@
               </div>
               <div class="post-info">
                 <div class="info-left">
-                  <p class="date">Published on <time datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time> by {{ site.author }}</p>
+                  <p class="date">تاریخ ارسال <time datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time> ، نوشته شده توسط {{ site.author }}</p>
                   {% if post.tags %}
-                  <p class="tags">Tags: {{ post.tags|format_tags(humanize=True) }}</p>
+                  <p class="tags">برچسب ها: {{ post.tags|format_tags(humanize=True) }}</p>
                   {% endif %}
                 </div>
               </div>
@@ -182,7 +181,7 @@
               </div>
               <div class="post-info">
                 <div class="info-left">
-                  <p class="date">Published on {{ post.created_at|format_date }} by {{ site.author }}</p>
+                  <p class="date">تاریخ ارسال {{ post.created_at|format_date }} ، نوشته شده توسط {{ site.author }}</p>
                 </div>
                 <div class="info-right">
                   <p class="comments">
@@ -217,7 +216,7 @@
               </div>
               <div class="post-info">
                 <div class="info-left">
-                  <p class="date">Published on {{ link.created_at|format_date }} by {{ site.author }}</p>
+                  <p class="date">تاریخ ارسال {{ link.created_at|format_date }} ، نوشته شده توسط {{ site.author }}</p>
                 </div>
                 <div class="info-right">
                   <p class="comments">
@@ -271,8 +270,8 @@
         <div class="span12">
           <footer class="footer">
             <div class="copyright">
-              <p class="pull-left">All rights Reserved &copy; <a href="/">{{ site.name }}</a>.</p>
-              <p class="pull-right">Powered by <a href="http://postach.io" target="_blank">Postach.io</a> | Design based on <a href="http://blog.cerny.me/">Michal Černý</a></p>
+              <p class="pull-right">تمامی حقوق محفوظ است &copy; <a href="/">{{ site.name }}</a>.</p>
+              <p class="pull-left">نیرو گرفته از <a href="http://postach.io" target="_blank">Postach.io</a> | طرح بر اساس <a href="http://blog.cerny.me/">Michal Černý</a> | فارسی شده توسط <a href="http://hamid.ml">حمید کرد</a></p>
             </div>
           </footer>
         </div>
@@ -303,5 +302,30 @@
     <!-- javascript -->
     <script src="{{ assets('js/gulio.min.js') }}" /></script>
 
+    <!-- timeago -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.1/jquery.timeago.min.js" /></script>
+    <script type="text/javascript">
+        // Persian
+        jQuery.timeago.settings.strings = {
+          prefixAgo: null,
+          prefixFromNow: null,
+          suffixAgo: "پیش",
+          suffixFromNow: "از حال",
+          seconds: "کمتر از یک دقیقه",
+          minute: "حدود یک دقیقه",
+          minutes: "%d دقیقه",
+          hour: "حدود یک ساعت",
+          hours: "حدود %d ساعت",
+          day: "یک روز",
+          days: "%d روز",
+          month: "حدود یک ماه",
+          months: "%d ماه",
+          year: "حدود یک سال",
+          years: "%d سال"
+        };
+        $(document).ready(function(){
+            jQuery("time").timeago();
+        });
+    </script>
   </body>
 </html>
