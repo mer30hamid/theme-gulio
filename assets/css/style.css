@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans); */
 /**
  * Page styles
  */
@@ -391,7 +391,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.625;
   color: #333333;
@@ -1204,7 +1204,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Tahoma,  Arial, Helvetica, sans-serif;
 }
 label {
   display: block;
@@ -5824,7 +5824,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -8824,7 +8824,7 @@ body {
   padding-bottom: 1.25rem;
   font-weight: normal;
   font-size: 100%;
-  font-family: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
   line-height: 1.625;
   color: #252525;
   background: #ffffff url('../img/bgnoise_lg.png') fixed;
