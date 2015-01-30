@@ -10,7 +10,7 @@
       {% endif %}
       | {{ site.name }}
     </title>
-
+         
     {{ header_meta }}
 
     <link href="{{ assets('css/style.css') }}" rel="stylesheet" />
@@ -322,9 +322,18 @@
           year: "حدود یک سال",
           years: "%d سال"
         };
+        
+        //ENGLISH posts Style
+        document.write('<style>.ENG .post-head:before{right:inherit;left:40 px;left:2.5rem}.ENG .post-body,.ENG .post-head{direction:ltr}</style>');
         $(document).ready(function(){
             jQuery(".date time").timeago();
+            blogPosts = $(".blog-post h2:contains('[ENG]')");
+            for(var i=0;i<blogPosts.length;++i){
+               $(blogPosts[i].parentNode.parentNode).addClass('ENG');
+            }
         });
+
+        
     </script>
   </body>
 </html>
